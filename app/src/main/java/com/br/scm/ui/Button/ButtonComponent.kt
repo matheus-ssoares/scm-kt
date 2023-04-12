@@ -16,8 +16,8 @@ fun ButtonComponent(text: String, onClick: () -> Unit) {
         onClick = onClick,
         modifier = Modifier
             .fillMaxWidth()
-            .height(50.dp),
-        shape = RoundedCornerShape(6.dp)
+            .height(45.dp),
+        shape = RoundedCornerShape(12.dp)
 
     ) {
         Text(text = text, fontFamily = poppinsRegular)
