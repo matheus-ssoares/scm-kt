@@ -52,14 +52,14 @@ fun LoginScreen(
 
         Column(modifier = Modifier.padding(bottom = 50.dp)) {
 
-            Input("E-mail:",email, onTextChanged = {email = it})
+            Input("E-mail:", email, onTextChanged = { email = it })
 
             Spacer(modifier = Modifier.height(15.dp))
 
             Input(
                 "Password",
                 password,
-                onTextChanged = {password = it},
+                onTextChanged = { password = it },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                 visualTransformation = PasswordVisualTransformation()
             )

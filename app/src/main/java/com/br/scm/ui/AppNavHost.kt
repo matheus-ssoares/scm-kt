@@ -19,7 +19,7 @@ fun AppNavHost(
 
     NavHost(
         navController = navController,
-        "Login",
+        "Register",
         modifier = Modifier
             .fillMaxSize()
             .background(color = MaterialTheme.colors.background),
@@ -30,7 +30,7 @@ fun AppNavHost(
                 onContinue = {}
             )
         }
-        composable("Register"){ RegisterScreen() }
+        composable("Register") { RegisterScreen( onContinue = {}) }
     }
 
 }
