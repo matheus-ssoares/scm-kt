@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 fun Input(
     label: String,
     text: String,
+    isLoading: Boolean = false,
     onTextChanged: (String) -> Unit,
     keyboardOptions: KeyboardOptions? = null,
     visualTransformation: VisualTransformation? = null
@@ -30,6 +31,7 @@ fun Input(
             colors = TextFieldDefaults.outlinedTextFieldColors(
                 focusedBorderColor = MaterialTheme.colors.primary,
             ),
+            enabled = isLoading.not(),
             keyboardOptions = if (keyboardOptions != null) KeyboardOptions(keyboardType = KeyboardType.Password) else KeyboardOptions(),
             visualTransformation = visualTransformation ?: VisualTransformation.None
         )
